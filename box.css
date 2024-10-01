@@ -2,15 +2,15 @@
 
 
 
-.container
+.container1
 {
     width:100%;
     display:flex;
-    justify-content: center;
+    justify-content: right;
 
 }
 
-.contentbox
+.contentbox1
 {
     width:350px;
     height: 200px;
@@ -21,12 +21,42 @@
     border-radius: 10px;
 }
 
-.contentbox h2{
+.contentbox1 h2{
     color: black;
     margin: 20px;
 }
 
-.contentbox p{
+.contentbox1 p{
+    color: black;
+    margin: 20px;
+}
+
+
+.container2
+{
+    width:100%;
+    display:flex;
+    justify-content: left;
+
+}
+
+.contentbox2
+{
+    width:350px;
+    height: 200px;
+    margin: 20px;
+    position: relative;
+    display: inline-block;
+    box-shadow: 5px 5px 10px 0px lightgray;
+    border-radius: 10px;
+}
+
+.contentbox2 h2{
+    color: black;
+    margin: 20px;
+}
+
+.contentbox2 p{
     color: black;
     margin: 20px;
 }
