@@ -10,7 +10,9 @@
     <link rel="stylesheet" href="box.css">
 </head>
 
-<body>
+
+<!-- <a href="#" target="_blank"></a> -->
+
     <!-- 网页的大标题 -->
     <h1>网工的孩子们，快来学习吧！</h1>
     
@@ -24,6 +26,34 @@
                 <h2>程序设计课邮箱收集</h2>
                 请根据指引完成邮箱的填写<br>
                 <a href="_blank">开始填写</a>
+
+                <!--一个定值版倒计时-->
+                <style>       
+                    div{
+                        font-size:30pt;
+                        color: red;
+
+
+                    }
+                </style>
+            
+                <!-- 定值 -->
+                <script>
+                    var edjs = document.getElementsByTagName('div') [0];
+                    var time=86400;
+                    
+                    var timer=setInterval (function()
+                    {
+                        time--;
+                        if (time==0){
+                            clearInterval(timer);
+                            location.href='test.html';
+                        }
+                        edjs.innerHTML=time;
+
+                    },1000);
+                </script>
+
             </div>
         </a>
     </div>
@@ -82,37 +112,7 @@
     软件工程实验室2  630
     <br>
 
-<!--一个定值版倒计时-->
-    <style>       
-        div{
-            font-size:30pt;
-            color: red;
 
-
-        }
-    </style>
-</head>
-
-<!-- 定值 -->
-<div>
-    86400
-</div>
-
-<script>
-    var edjs = document.getElementsByTagName('div') [0];
-    var time=86400;
-    
-    var timer=setInterval (function()
-    {
-        time--;
-        if (time==0){
-            clearInterval(timer);
-            location.href='test.html';
-        }
-        edjs.innerHTML=time;
-
-    },1000);
-</script>
 
     <!-- 下面是声明部分 -->
     <foot>本网页由24网工2班学委<strong>万清心</strong>以及队员们：
