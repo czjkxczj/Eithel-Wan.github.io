@@ -91,5 +91,42 @@
     </foot>
 
 </body>
+<!--一个定值版倒计时-->
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible"content="IE=edge">
+    <meta name="viewport"content="width=device-width,initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            font-size:30pt;
+            color: red;
 
+
+        }
+    </style>
+</head>
+
+
+<div>
+    86400
+</div>
+<script>
+    var edjs = document.getElementsByTagName('div') [0];
+    var time=86400;
+    
+    var timer=setInterval (function(){
+        time--;
+        if (time==0){
+            clearInterval(timer);
+            location.href='test.html';
+        }
+        edjs.innerHTML=time;
+
+    },1000);
+</script>
+</body>
 </html>
