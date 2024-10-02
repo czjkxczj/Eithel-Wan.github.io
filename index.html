@@ -82,25 +82,8 @@
     软件工程实验室2  630
     <br>
 
-
-    <!-- 下面是声明部分 -->
-    <foot>本网页由24网工2班学委<strong>万清心</strong>以及队员们：
-        <strong>网工1吴若晨、网工2张竣贺</strong>在国庆假期中突击手搓完成。
-        <br>如有不足，欢迎提出！
-        <br>邮箱：wanqingxin@m.scnu.edu.cn
-    </foot>
-
-</body>
 <!--一个定值版倒计时-->
-</html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible"content="IE=edge">
-    <meta name="viewport"content="width=device-width,initial-scale=1.0">
-    <title>Document</title>
-    <style>
+    <style>       
         div{
             font-size:30pt;
             color: red;
@@ -110,15 +93,17 @@
     </style>
 </head>
 
-
+<!-- 定值 -->
 <div>
     86400
 </div>
+
 <script>
     var edjs = document.getElementsByTagName('div') [0];
     var time=86400;
     
-    var timer=setInterval (function(){
+    var timer=setInterval (function()
+    {
         time--;
         if (time==0){
             clearInterval(timer);
@@ -128,5 +113,15 @@
 
     },1000);
 </script>
+
+    <!-- 下面是声明部分 -->
+    <foot>本网页由24网工2班学委<strong>万清心</strong>以及队员们：
+        <strong>网工1吴若晨、网工2张竣贺</strong>在国庆假期中突击手搓完成。
+        <br>如有不足，欢迎提出！
+        <br>邮箱：wanqingxin@m.scnu.edu.cn
+    </foot>
+
+</body>
+
 </body>
 </html>
