@@ -85,11 +85,11 @@
 .box{
     width: 400px;
     height: 200px;
-    background-color: rebeccapurple;
+    background-color: skyblue ;
     text-align: center;
 }
 div{
-    background-color: antiquewhite;
+    background-color: skyblue;
 
 }
 .div{
@@ -97,6 +97,6 @@ div{
 
 }
  span{
-    background-color: azure;
+    background-color: skyblue;
  }
    
