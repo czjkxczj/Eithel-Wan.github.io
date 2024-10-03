@@ -10,7 +10,10 @@
     <link rel="stylesheet" href="box.css">
 </head>
 
-<body>
+<body bgcolor="lightblue">
+
+<!-- <a href="#" target="_blank"></a> -->
+
     <!-- 网页的大标题 -->
     <h1>网工的孩子们，快来学习吧！</h1>
     
@@ -24,6 +27,34 @@
                 <h2>程序设计课邮箱收集</h2>
                 请根据指引完成邮箱的填写<br>
                 <a href="_blank">开始填写</a>
+
+                <!--一个定值版倒计时-->
+                <style>       
+                    div{
+                        font-size:30pt;
+                        color: red;
+
+
+                    }
+                </style>
+            
+                <!-- 定值 -->
+                <script>
+                    var edjs = document.getElementsByTagName('div') [0];
+                    var time=86400;
+                    
+                    var timer=setInterval (function()
+                    {
+                        time--;
+                        if (time==0){
+                            clearInterval(timer);
+                            location.href='test.html';
+                        }
+                        edjs.innerHTML=time;
+
+                    },1000);
+                </script>
+
             </div>
         </a>
     </div>
@@ -83,13 +114,119 @@
     <br>
 
 
+
     <!-- 下面是声明部分 -->
     <foot>本网页由24网工2班学委<strong>万清心</strong>以及队员们：
         <strong>网工1吴若晨、网工2张竣贺</strong>在国庆假期中突击手搓完成。
         <br>如有不足，欢迎提出！
         <br>邮箱：wanqingxin@m.scnu.edu.cn
     </foot>
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+        body{
+            min-height: 100vh;
+            background-color: lightblue;
+        }
+        .container{
+                    position: relative;
+                    width: 100%;
+                    height:100vh;
+                    overflow:hidden;
+                }
+                .bubbles{
+                    display: flex;
+                } 
+
+                .bubbles span{
+                    width: 30px;
+                    height: 30px;
+                    background-color: rgb(137, 170, 240);
+                    margin: 0 4px;
+                    border-radius:50% ;
+                    box-shadow: 0 0 0 10px #4fc3dc44,
+                                0 0 50px #4fc3df,
+                                0 0 100#4fc3dc;
+                    animation: animate  calc(150s/var(--i)) linear infinite;
+                }
+                .bubbles span:nth-child(even){
+                    background-color: #e4e68c;
+                    box-shadow: 0 0 0 10px #4fc3dc44,
+                                0 0 50px #4fc3df,
+                                0 0 100#4fc3dc;
+
+                }
+                @keyframes animate{
+                    0%{
+                        transform: translateY(100vh) scale(0);
+
+                    }
+                    100%{
+                         transform: translateY(-10vh)scale(1);
+                    }
+                }
+
+    
+    </style>
+    <body bgcolor="lightblue" > 
+        <div class="container">
+            <div class="bubbles">
+                <span  style="--i:14;"> </span>
+                <span  style="--i:43;"> </span>
+                <span  style="--i:19;"> </span>
+                <span  style="--i:2;"> </span>
+                <span  style="--i:35;"> </span>
+                <span  style="--i:36;"> </span>
+                <span  style="--i:78;"> </span>
+                <span  style="--i:66;"> </span>
+                <span  style="--i:55;"> </span>
+                <span  style="--i:99;"> </span>
+                <span  style="--i:39;"> </span>
+                <span  style="--i:34;"> </span>
+                <span  style="--i:14;"> </span>
+                <span  style="--i:15;"> </span>
+                <span  style="--i:19;"> </span>
+                <span  style="--i:10;"> </span>
+                <span  style="--i:35;"> </span>
+                <span  style="--i:6;"> </span>
+                <span  style="--i:78;"> </span>
+                <span  style="--i:66;"> </span>
+                <span  style="--i:55;"> </span>
+                <span  style="--i:22;"> </span>
+                <span  style="--i:39;"> </span>
+                <span  style="--i:34;"> </span>
+                <span  style="--i:92;"> </span>
+                <span  style="--i:15;"> </span>
+                <span  style="--i:19;"> </span>
+                <span  style="--i:20;"> </span>
+                <span  style="--i:35;"> </span>
+                <span  style="--i:36;"> </span>
+                <span  style="--i:78;"> </span>
+                <span  style="--i:60;"> </span>
+                <span  style="--i:56;"> </span>
+                <span  style="--i:22;"> </span>
+                <span  style="--i:49;"> </span>
+                <span  style="--i:34;"> </span>
+
+                
+            </div>
+        </div>
+        
+        
+        
+        
+
+
+        
+    
+
+
 
 </body>
 
+</body>
 </html>
